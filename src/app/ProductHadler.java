@@ -21,7 +21,7 @@ public class ProductHadler {
 
             Annotation[] annotations = element.getAnnotations();
             for (Annotation annotation : annotations) {
-                if ( annotation instanceof Products product ) {
+                if ( annotation instanceof Product product ) {
                     System.out.println("Name: " + product.name());
                     System.out.println("quota: " + product.quota());
 
