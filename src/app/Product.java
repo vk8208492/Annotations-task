@@ -7,8 +7,7 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-
-public @interface Product {
+@interface Products {
 
     String name () default "unknown";
     int quota() default 0;

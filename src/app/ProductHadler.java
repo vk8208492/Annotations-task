@@ -5,7 +5,7 @@ import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Method;
 
 
-public class BookHadler {
+public class ProductHadler {
 
     public static void main(String[] args)
             throws NoSuchMethodException, SecurityException {
@@ -21,7 +21,7 @@ public class BookHadler {
 
             Annotation[] annotations = element.getAnnotations();
             for (Annotation annotation : annotations) {
-                if ( annotation instanceof Product product ) {
+                if ( annotation instanceof Products product ) {
                     System.out.println("Name: " + product.name());
                     System.out.println("quota: " + product.quota());
 
